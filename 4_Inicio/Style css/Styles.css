@@ -1,0 +1,12 @@
+h1,p {
+   /*  display: inline; */
+}
+
+
+strong{/* todo lo que meta en el css y le ponga aqui su etiqueta con instrusciones afectara sobre todos si pongo parrafo azu todos los parrafos seran azules */
+    font-weight: normal;
+display: block
+
+
+
+}
