@@ -3,12 +3,13 @@ h1,p {
  }
  
  
- strong{/* todo lo que meta en el css y le ponga aqui su etiqueta con instrusciones afectara sobre todos si pongo parrafo azu todos los parrafos seran azules */
-     font-weight: normal;
- display: block /* {€- display:-€  in line o block se comportara de una forma u otra bloque o linea, es una caractristica del html pero se escribe en css. El bloke obliga al resto a irse debajo aunq le diga que ocupe la mitad la otra la deja en blanco La linea no}
+ strong     {/* todo lo que meta en el css y le ponga aqui su etiqueta con instrusciones afectara sobre todos si pongo parrafo azu todos los parrafos seran azules */
+    
+    font-weight: normal;
+     color: darkblue;
+    display: block; } /* {€- display:-€  in line o block se comportara de una forma u otra bloque o linea, es una caractristica del html pero se escribe en css. El bloke obliga al resto a irse debajo aunq le diga que ocupe la mitad la otra la deja en blanco La linea no}
  
  
-  */
- }
+ 
 
-body{background-color: peru}
+
