@@ -7,13 +7,13 @@ h1,p
      color: darkblue;
     display: block; } /* /* {€- display:-€  in line o block se comportara de una forma u otra bloque o linea, es una caractristica del html pero se escribe en css. El bloke obliga al resto a irse debajo aunq le diga que ocupe la mitad la otra la deja en blanco La linea no}} /* */
 
-p*p001 {
+#p001 {
     color: darkgreen;
     font-family: fantasy;
     text-align: center;
 }
-.destacado{
-    color: firebrick
+.destacado {
+    color: firebrick;
 
 }
 
