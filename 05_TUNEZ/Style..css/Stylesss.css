@@ -22,9 +22,10 @@ h1,p
      text-align: center
     } /* afecta a todas a no ser que las span en un nuevo etiqueta o clase e ira a todos*/
 
-    pre { text-align: justify;
+    pre { text-align: center;
         color: deeppink;
-        font-size: 0.5cm 
+        font-family: cursive
+    
 
     }
 
