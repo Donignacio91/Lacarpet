@@ -1,6 +1,7 @@
 h1,p
  {/*  display: inline; */}
  
+ body {background: chocolate; }
  strong     {/* todo lo que meta en el css y le ponga aqui su etiqueta con instrusciones afectara sobre todos si pongo parrafo azu todos los parrafos seran azules */
     
     font-weight: normal;
@@ -13,14 +14,15 @@ h1,p
     text-align: center;
 }
 .destacado {
-    color: firebrick;
+    color: rgb(253, 7, 7);
 
 }
 
 
+
  img {
      text-align: center
-    }
+    } /* afecta a todas a no ser que las span en un nuevo etiqueta o clase e ira a todos*/
  
 
 
