@@ -33,7 +33,7 @@
             margin: 1rem 5rem 3rem 1rem; /* margen en el sentido de las agujas del reloj 1º rem arriba 2º rem dercha 3º rem abajo 4 rem izquierda */
         }  
         .imagen { text-align: center;
-            max-width: 100%; /* para que la imagen ocupe como mucho el 100% */
+            max-width: 100%; /* para que la imagen ocupe como mucho el 100% y si quiero fijar el tamaño pongo width: y el ancho en pixles  */
         }
         .figure {
             margin:0rem;
@@ -41,4 +41,7 @@
     
         .pie{
             text-align: center;
+        }
+        .figure {
+            margin: 2cm;
         }
