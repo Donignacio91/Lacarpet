@@ -16,26 +16,33 @@
 
 </head>
 <!--en html5 aparecen nuevas etiquetas con valor semantico relaccionadas con las seecciones del documento y esas etiquetas son: SECTION HEADER y FOOTER, NAV, ARTICLE y ASIDE
-    Section me permite marcar donde empieza y acaba una seccion
-    HEADER Es una cabecera. define zonas semanticas cabecera y pie Tanto de una seccion como de los niveles que nos de la gana 
+    SECTION: me permite marcar donde empieza y acaba una seccion
+    HEADER: Es una cabecera. define zonas semanticas cabecera y pie Tanto de una seccion como de los niveles que nos de la gana 
+    NAV: El elemento nav es un contenedor para enlaces de navegación, que se supone proveen formas de acceder a las secciones del sitio web, así como a documentos externos. Se supone que los vínculos dentro de este elemento corresponden a un bloque de navegación principal únicamente.
+    ARTICLE: es una seccion con ineteres independiente al margen de la web de facil comprensión, si pienso que el texto tiene interes para los demas lo nombro article. podria leerse o mas tarde o a parte de la web en la que estas WEB de banco, apartado de aprende a invertir en bolsa) el mejor ejemplo es un blog cada post es un article y se pueden exportar esos archivos.
+    ASIDE: son section con informacion secundaria necesaria para la web tipo publi; poner un informacion del tiempo serivicios adicionales complementos solo la informacion es larteral secubdaria la posicion la que yo quiera.
      las dos etiquetas que creaban secciones en html anterior al 5 eran body y los encabezados:h1-h6 -->
 
 <body>
     <header class="mainheader">  
           <h1>Los seres vivoa</h1>
           <p> Ejemplo sencillo de clasificacion </p>
-    </header>
+            <nav> plantas | animales </nav>
+
+
+
+    </header class="section_header">
   
-    <!-- Ejemplo de uso correcto de h2 -->
+    <!-- Ejemplo de uso correcto de h2 si queremos aplicar una semantica correcta cada nivel de h1, h2 ,h3 han de estar correlacionados con la sección(si h1 es titulazo y ha 2 es titulitos cada uno debera situarse en el que le corresponde y en diferentes secciones--> 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo accusantium laboriosam nam sequi asperiores, omnis
         debitis voluptates vel qui mollitia explicabo nulla aut praesentium ullam illum culpa, quidem accusamus in.</p>
     <p>Minima perferendis vel est sit unde deleniti repudiandae natus ducimus atque aperiam, ad dolorem sint eius error
         corrupti minus sequi aspernatur provident hic ratione iusto quos. Atque, harum. Velit, voluptatem.</p>
 
     <section>
-        <header> <h2>Plantas</h2> </header>
+        <header class="section_header"> <h2>Plantas</h2> </header>  <!--  tanto el header como el footer son buenos sitios donde aplicara cases para el estilo posterior -->
         
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi adipisci, aliquid a ea veniam consequatur
+        <p> <i>Lorem</i>  ipsum dolor sit amet consectetur adipisicing elit. Nisi adipisci, aliquid a ea veniam consequatur
             dolorem blanditiis non. Id doloremque quod atque obcaecati expedita veritatis laborum eaque beatae? Saepe,
             eaque.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi adipisci, aliquid a ea veniam consequatur
@@ -46,7 +53,9 @@
 
     <section> 
         
-         <section> <header> <h2> Animales </h2> </header>
+         <section> <header class="section_header"> <h2> Animales </h2> </header>
+         <samp class="separada"><nav> Vertebrados | invertebrados </nav></samp>        <!-- la barrita | es altgr+1 -->
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi adipisci, aliquid a ea veniam consequatur
             dolorem blanditiis non. Id doloremque quod atque obcaecati expedita veritatis laborum eaque beatae? Saepe,
             eaque.</p>
@@ -67,9 +76,9 @@
         blanditiis non. Id doloremque quod atque obcaecati expedita veritatis laborum eaque beatae? Saepe, eaque.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi adipisci, aliquid a ea veniam consequatur dolorem
         blanditiis non. Id doloremque quod atque obcaecati expedita veritatis laborum eaque beatae? Saepe, eaque.</p>
-        <Footer>Don invertebrados</Footer>
+        <Footer class="">Don invertebrados</Footer>
     </section> 
-<footer class="mainfooter"><!-- la tipica linea de pie de pagina  -->
+<footer class="section_footer"><!-- la tipica linea de pie de pagina  -->
   <address> Nacho Caballero Ruiz esto es mio </address> </footer>
 
 </body>
