@@ -1,9 +1,11 @@
 .recuadro { border: 0.1cm;
-    color: blue;
-    border-style: solid;}
+    color:rgb(52, 157, 255);
+    border-style: solid;
+    text-align: center;
+    }
 
     .mainfooter {background-color: grey;
-        color: rgb(12, 0, 80);
+        color: rgb(52, 157, 255);
         height: 7vh;  
         text-align: center;
         padding: 0.02rem;
@@ -12,13 +14,18 @@
          }
 
         .mainheader {
+            text-align: center;
             font-size: 1.33rem;
             margin-top: -1rem;
-            color:darkorange;
+            color:rgb(52, 157, 255);
             font-weight: bold; /* Negrita se puede con strong pero así esta bien escrito */
-            background: darkgrey;
+            background: rgb(7, 6, 6);
         }
     body {
         margin: 0;
+        }
+        .margen{
+            margin: 1rem 5rem 3rem 1rem; /* margen en el sentido de las agujas del reloj 1º rem arriba 2º rem dercha 3º rem abajo 4 rem izquierda */
+        }  
 
-    }
+    

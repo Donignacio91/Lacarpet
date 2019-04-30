@@ -5,39 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Elementos/etiquetas de la web</title>
+    <title>Etiquetas de la web</title>
     <link rel="stylesheet" href="stylos/stylo.css">
 
 
 </head>
 
 <body>
-    <header class="mainheader">
-        <h1>Etiquetas de html</h1>
+    <header class="mainheader"> 
+        <h1>Elemntos/etiquetas de html</h1>
         <P> Clasificación de las etiquetas según el estandar HTML 5.2 </P>
     </header>
-    <P>
-        El estandar diferencia inicialmente tres tipos de etiquetas: Section, Grouping content y Text level semantic.
-    </P>
+  <div class="margen">
+        <P>
+        El estandar diferencia inicialmente tres tipos de etiquetas: <span lang="en"> Section, Grouping content y Text level semantic.</span> <!-- para mejorar seo si son palabras o frases mejora pero si no tampoco mucho pero suma para los lectores automaticos -->
+        </P>
 
-    <section>
-        <h2> Section. </h2>
+    <section id="sections">
+        <header><h2> <span lang="en">Section elements.</span>  </h2></header>
+     </section>
+        <P> 
+         Esto trata de elementos de seccionado que son los que se reflejan en el <strong>esquema</strong>  outline de la pagina, inicialmente estos elmentos incluian Body y los encabezados(h1...h6).
+        </P>
+        <P>
+        En html 5 se añaden los nuevos elementos semanticos que son: section, footer, header, article ,nav, aside (descritos en el readme.) 
+        </P>
+            <section id="Elementos">
+                 <section id="section"> 
+                     <h3>Section</h3> 
+
+                <P>El elemento de HTML section (&lt;section&gt;) <!-- codigos de escape html se pueden buscar en internet  & seguido de a mayor que &lt menor que &gt --> representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas. Es, por lo tanto, una etiquéta muy semántica.</P>
+                <P> Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes.</P>    
+            </section>
+            <section id="header"> <h3>Header</h3> 
+                <P>El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de navegación . Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas. 
+                </P>
+            </section>
+            <section id="footer"><h3>Footer</h3>
+                <P>El Elemento HTML Footer (&lt;footer&gt;) representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección (p.e, su ancestro mas cercano article, aside, nav, section, blockquote, body, details, fieldset, figure, td). Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.
+                 </P>
+            </section>
+            <section id="article"><h3>Article</h3>
+                <P>El Elemento article de HTML (&lt;article&gt;) representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido 
+                </P>
+            </section>
+            <section id="nav"><h3>Nav</h3>
+                <P>La MDN indica que esta etiqueta crea un menú de navegación (https://developer.mozilla.org). 
+                     El elemento HTML &lt;nav&gt; representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de contenido e índices. 
+                 </P>
+            </section>
+            <section id="aside"><h3>Aside</h3>
+                <P> Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en contenido que está <em>tangencialmente relacionado</em> <!-- La etique em enfatiza mejor el seo por que lectores enfatizan y aoarece en cursiva --> con el contenido que le rodea, que podría ser considerado independiente de ese contenido. Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados. 
+                </P>
+            </section> 
+        </section>
+            
+
+           
+ <section id="grouping"> 
+        <header> <h2> Grouping content. </h2></header>
+            <section><p> </p></section>
+
     </section>
 
-    <section>
-        <h2> Grouping content. </h2>
+   
+ <section id="text-level">
+         <header><h2> Text level semantic. </h2></header>
+
     </section>
+  </div>
     
-    <section>
-        <h2> Text level semantic. </h2>
-    </section>
 
-    
     
     
     <footer class="mainfooter"> 
-        <p>Escrito por: Nacho Caballero </p> 
-        <a href="mailto://naxo10011991@gmail.com">Contacto</a> <!-- mailto/ etiqueta para enlazar al correo -->
+        <p>Escrito por: Nacho Caballero © <!-- copirght se escribe alt+0+1+6+9 todos a la vez o lo saco de word o lo copio y pego de donde sea --> </p> 
+        <a href="mailto://naxo10011991@gmail.com">Contacto</a> <!-- mailto/ etiqueta para enlazar al correo se parte de la etiqueta a -->
     </footer>
 
 </body>
