@@ -21,11 +21,24 @@
             font-weight: bold; /* Negrita se puede con strong pero así esta bien escrito */
             background: rgb(7, 6, 6);
         }
+            .mainheader p{ 
+                margin: 0rem 9
+            rem 0rem 0rem;
+
+        }
     body {
         margin: 0;
         }
         .margen{
             margin: 1rem 5rem 3rem 1rem; /* margen en el sentido de las agujas del reloj 1º rem arriba 2º rem dercha 3º rem abajo 4 rem izquierda */
         }  
-
+        .imagen { text-align: center;
+            max-width: 100%; /* para que la imagen ocupe como mucho el 100% */
+        }
+        .figure {
+            margin:0rem;
+        }
     
+        .pie{
+            text-align: center;
+        }
