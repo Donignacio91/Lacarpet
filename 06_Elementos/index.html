@@ -13,7 +13,7 @@
 
 <body>
     <header class="mainheader"> 
-        <h1>Elemntos/etiquetas de html</h1>
+        <h1>Elementos/etiquetas de html</h1>
         <P> Clasificación de las etiquetas según el estandar HTML 5.2 </P>
     </header>
   <div class="margen">
@@ -35,7 +35,7 @@
                      <h3>Section</h3> 
 
                 <P>El elemento de HTML section (&lt;section&gt;) <!-- códigos de escape html se pueden buscar en internet  & seguido de a mayor que &lt menor que &gt --> representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y sub-secciones relacionadas. Es, por lo tanto, una etiqueta muy semántica.</P>
-                <P> Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes.</P>    
+                <P> Su funcionalidad principal es estructurar semanticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes.</P>    
             </section>
             <section id="header"> <h3>Header</h3> 
                 <P>El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de navegación . Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas. 
@@ -62,7 +62,7 @@
             <figure class="imagen"> 
                  <img src="https://almosthumor.files.wordpress.com/2011/09/html5demo1.jpg" alt="esquema de los elementos semánticos de html 5">
                  
-        </section> <figcaption class="pie"> hola hola pie de pag </figcaption> </figure> > <!-- equivale a una div pero mejor para las imágenes poner pie de pag(figc) y mas coasa que si solo pongo una div y una imagen no -->
+        </section> <figcaption class="pie"> hola hola pie de pag </figcaption> </figure> > <!-- equivale a una div pero mejor para las imágenes poner pie de pag ("figc") y mas cosas que si solo pongo una div y una imagen no -->
 
             
             <img src="assets/html5demo1.jpg" alt="fotele">
@@ -70,7 +70,21 @@
            
  <section id="grouping"> 
         <header> <h2> Grouping content. </h2></header>
-            <section><p> </p></section>
+            <section><p> Son etiqueta que por defecto tendrán un display en bloque (agrupan), pero no contribuyen al <strong>esquema</strong>  de la página  <span lang="en"> (outline)</span>. Por ejemplo Párrafo  </p></section>
+            <section><h3> Párrafos </h3>
+                <P> Se pueden crear párrafos con la etiqueta P, PRE, Blockquote, </P>
+                <P> Ejemplo de un párrafo preformateado </P>
+                <Pre> <!-- me conserva el formato de escritura citas dialogos poemas...  -->
+                    Esto esta dentro de 
+                    la etiqueta pre
+                </Pre>
+                <P>se puede usar para fracmentos de código</P>
+                <Pre>
+                    let x =25
+                    let y = 24
+                    let = -x + y 
+                </Pre>
+            </section>
 
     </section>
 

@@ -45,3 +45,20 @@
         .figure {
             margin: 2cm;
         }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 2.6rem;
+            font-weight: bold;
+            color: darkgreen;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        Pre{
+            font-family: inherit; /* inherit porque el navegador le aplica por defecto un estilo predeterminado; le hago un css e inherit o el que me de la gana ponerle pero ojo con los predeterminados se ven en el navegador f12 sobre la zona deseada y ya ne dice de donde esta sacando el estilo */
+           
+        } 
