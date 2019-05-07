@@ -24,19 +24,16 @@
     <section id="sections">
         <header><h2> <span lang="en">Section elements.</span>  </h2></header>
      </section>
-        <P> 
-         Esto trata de elementos de seccionado que son los que se reflejan en el <mark><strong>esquema</strong></mark>   outline de la pagina, inicialmente estos elmentos incluian Body y los encabezados(h1...h6).
-        </P>
-        <P>
-        En html 5 se añaden los nuevos elementos semanticos que son: section, footer, header, article ,nav, aside (descritos en el readme.) 
-        </P>
+        <p>Esto trata de elementos de seccionado que son los que se reflejan en el <mark><strong>esquema</strong></mark>   outline de la pagina, inicialmente estos elmentos incluian Body y los encabezados(h1...h6).</p>
+        <p>En html 5 se añaden los nuevos elementos semanticos que son: section, footer, header, article ,nav, aside (descritos en el readme.)</p>
             <section id="Elementos">
                  <section id="section"> 
                      <h3>Section</h3> 
                      <blockquote cite="https://www.w3.org/TR/html52/sections.html#sections" title="developer.mozilla.org">
-                <P>El elemento de HTML section (&lt;section&gt;) <!-- códigos de escape html se pueden buscar en internet  & seguido de a mayor que &lt menor que &gt --> representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y sub-secciones relacionadas. Es, por lo tanto, una etiqueta muy semántica.</P>
-                <P> Su funcionalidad principal es estructurar semanticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes.</P>    
-                </blockquote>
+                <P>El elemento de HTML section (&lt;section&gt;) <!-- códigos de escape html se pueden buscar en internet  & seguido de a mayor que &lt menor que &gt --> representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y sub-secciones relacionadas. Es, por lo tanto, una etiqueta muy semántica.</P></blockquote>
+                <blockquote cite="https://www.w3.org/TR/html52/sections.html#sections" title="developer.mozilla.org">
+                    <p>Su funcionalidad principal es estructurar semanticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes.</p>   
+                
             </section>
             <section id="header"> <h3>Header</h3> 
                 <blockquote cite="https://www.w3.org/TR/html52/sections.html#sections" title="developer.mozilla.org"> <!-- al añadir el atributo cite a blockquote ya ponemos la url del sitio del que lo hemos cogido el siguiente atributo title hace que al pasar el cursor sobre el parafo o lo que sea a lo que le haya pueso un title salga un cuadradito con la informacion que yo desee; a una foto que es a una cita de donde  -->El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de navegación . Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas. 
@@ -103,18 +100,18 @@
 
            
  <section id="grouping"> 
-        <header> <h2> Grouping content. </h2></header>
+        <header> <h2> Grouping content. </h2></header> <!-- estos no apareceran en el esquema outline -->
             <section><p> Son etiqueta que por defecto tendrán un display en bloque (agrupan), pero no contribuyen al <strong>esquema</strong>  de la página  <span lang="en"> (outline)</span>. Por ejemplo Párrafo  </p></section>
             <section><h3> Párrafos </h3>
 
                 <blockquote cite="https://www.w3.org/TR/html52/sections.html#sections" title="developer.mozilla.org">
-                <P>  Se pueden crear párrafos con la etiqueta P, PRE, Blockquote <!-- para copiar parrafos litires de otro web los tengo que meter en blockquote -->, </P>
+                <P>  Se pueden crear párrafos con la etiqueta P, PRE, Blockquote </P><!-- para copiar parrafos literales de otro web los tengo que meter en blockquote -->,
                 <P> Ejemplo de un párrafo preformateado </P>
                 <Pre> <!-- me conserva el formato de escritura citas diálogos poemas...  -->
                     Esto esta dentro de 
                     la etiqueta pre
                 </Pre>
-                <P>se puede usar para fracmentos de código</P>
+                <P>se puede usar para fragmentos de código</P>
                 <Pre>
                     let x =25
                     let y = 24
@@ -123,7 +120,7 @@
             </blockquote>
             <p> La etiqueta blockquote se utiliza pra crear citas literales en bloque tal como hemos hecho anteriormente</p>
             <section>
-                <h3> Listas </h3>
+                <h2> Listas </h2>
                 <P> existen tres tipos de listas; desordenas (ul), ordenadas (ol) y de definición(dl) </P>
                 <h4>tipo de lista desordenada</h4><ul>
                 <li>section</li>
@@ -155,14 +152,44 @@
 
                     <dl>
                         
-                    <dt>Ul</dt><dd>desordenada</dd> <!-- estas son termino-definición termino (DT) definición (DD)-->
-                    <dt>Ol</dt><dd>ordenada</dd>
-                    <dt>Dl</dt><dd>lista de definición</dd>
+                    <dt>Ul</dt><dd>Desordenada</dd> <!-- estas son termino-definición termino (DT) definición (DD)-->
+                    <dt>Ol</dt><dd>Ordenada</dd>
+                    <dt>Dl</dt><dd>Lista de definición</dd>
                  </dl>
+                <section>
+                 <h3>Bloques neutros.</h3>
+                 <ul> 
+                     <p>La etiqueta div no tiene ningun valor semantico</p>
+                    <P> Unida al uso de la clase css es el primcipal elemneto del desiseño de la web</P>
+                </ul>
+                   
+                </section>
+                <section>
+                    <H3>Bloques nuevos en html5. </H3>
+                    <ul>
+                    <li>Address.</li>
+                    <li>Main.</li>
+                    <li>Figure.</li>
+                    </ul>
+                    <P>Según aparece en la web, <q cite="HTML.COM">el elemento html address, <a href="https://elpais.com/">aporta información de contacto,</a>  normalmente puede ser colocado dentro del elemnto footer de la section.</q> <!-- ES COMO UN BLOKQUOTE PERO PARA DENRTRO DE PARRAFOS CONSEGUIMOS LO MISMO QUE EN LOS BLOCKCUOTES; ENTRE COMILLA MARCA UNA CITA LITERAL  --> </P>
+                    <p>El elemento html adress aporta informacionde contacto, tambien aporta inforacion para su &ltarticle&gt mas cercano</p>
+                    <Blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main" title="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main">
+                        <P>El elemento HTML &ltmain&gt representa el contenido principal del &ltbody&gt de un documento o aplicación. El área principal del contenido consiste en el contenido que está directamente relacionado, o se expande sobre el tema central de un documento o la funcionalidad central de una aplicación. Este contenido debe ser único al documento, excluyendo cualquier contenido que se repita a través de un conjunto de documentos como barras laterales, enlaces de navegación, información de derechos de autor, logos del sitio y formularios de búsqueda (a menos, claro, que la función principal del documento sea un formulario de búsqueda).</P>      
+                    </Blockquote><!-- lo suyo seria un footer con una cite y un A sería mucho mas correcto lo otro es mas informal el cite con  blocquote  -->
+                    
+                    <footer>
+                            <cite> <a href="">https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main</a> </cite>
+                        </footer>
+                </blockquote>
+                    <p>El elemento figure es un contenedr de imagenes del que hablaremos al referirnos a estas</p>
+                </section>
                  <div class="clearfix"></div>
-                 </section>
 
+
+                 </section>
+                <h3>Ejemplos de listas largar</h3>
             </section>
+
 
     </section>
 
@@ -177,7 +204,8 @@
     
     
     <footer class="mainfooter"> 
-        <p>Escrito por: Nacho Caballero © <!-- copyrght se escribe alt+0+1+6+9 todos a la vez o lo saco de word o lo copio y pego de donde sea --> </p> 
+        <address> <p>Escrito por:  Nacho Caballero © <!-- copyrght se escribe alt+0+1+6+9 ó &copy) todos a la vez o lo saco de word o lo copio y pego de donde sea --> </p> </address>
+       
         <a href="mailto://naxo10011991@gmail.com">Contacto</a> <!-- mailto/ etiqueta para enlazar al correo se parte de la etiqueta a -->
     </footer>
         
