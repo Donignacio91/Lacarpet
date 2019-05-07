@@ -99,3 +99,8 @@
         a{
             color: darkgreen;
         }
+        .verde{ 
+            color: darkgreen;
+            font-weight: bold;
+            text-decoration: line-through red;
+        }

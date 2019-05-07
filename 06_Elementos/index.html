@@ -18,7 +18,7 @@
     </header>
   <div class="margen">
         <P>
-        El estándar diferencia inicialmente tres tipos de etiquetas: <span lang="en"> Section, Grouping content y Text level semantic.</span> <!-- para mejorar seo si son palabras o frases mejora pero si no tampoco mucho pero suma para los lectores automaticos -->
+        El estándar <abbr title="Hiper text markup language">HTML</abbr>  5.2 diferencia inicialmente tres tipos de etiquetas: <span lang="en"> Section, Grouping content y Text level semantic.</span> <!-- para mejorar seo si son palabras o frases mejora pero si no tampoco mucho pero suma para los lectores automaticos -->
         </P>
 
     <section id="sections">
@@ -57,7 +57,7 @@
             </section>
             <section id="article"><h3>Article</h3>
                 <blockquote cite="https://www.w3.org/TR/html52/sections.html#sections" title="developer.mozilla.org">
-                <P>El Elemento article de HTML (&lt;article&gt;) representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido 
+                <P>El Elemento article de HTML (&lt;article&gt;) representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma <em>independiente o reutilizable</em>  por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido 
                 </P>
                 <footer>
                         <cite>
@@ -146,6 +146,20 @@
                             
                         <dt> Pilot </dt> <dd> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi omnis nulla, quidem magni natus eveniet corrupti velit commodi quae ab nisi vel necessitatibus facilis soluta molestiae saepe ea placeat expedita.</p> </dd>
                     </Dl>
+                    <p>hay atributo especificvos de las listas { ol start}} </p> 
+                    <ol start="5">
+                        <li>esto me </li>
+                        <li>permite empezar</li>
+                        <li>la lista por</li>
+                        <li>el nº que quiera</li>
+                    </ol>
+                    <ol reversed> <!-- el reverse sirve para cambiar el numero de l lista; para invertirla -->
+                        <li>nacho 1</li><!-- la abrebiatura para escribir listas numerada {li*5{nacho $} nacho lista item... y el numero de reproducciones} -->
+                        <li>nacho 2</li>
+                        <li>nacho 3</li>
+                        <li>nacho 4</li>
+                        <li>nacho 5</li>
+                    </ol>
 
                 <h4> <strong>Lista de deficiones</strong> </h4>
                 <P>Dentro de esta lista podemos tener distintos items dt y dd (por un lado definición y por otro término); personas y su puesto en la empresa    </P>
@@ -181,7 +195,16 @@
                             <cite> <a href="">https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main</a> </cite>
                         </footer>
                 </blockquote>
-                    <p>El elemento figure es un contenedr de imagenes del que hablaremos al referirnos a estas</p>
+                    <p>El elemento figure es un contenedor de imagenes del que hablaremos al referirnos a estas</p>
+                    <ul>
+                        <li>Etiqueta hr</li>
+                        <p>El elemento HTML <strong>&lthr&gt</strong>  representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección). En versiones previas de HTML representaba una línea horizontal. Aún puede ser representada como una línea horizontal en los navegadores visuales, pero ahora es definida en términos semánticos y no tanto en términos representativos, por tanto para dibujar una línea horizontal se debería usar el CSS apropiado. </p>
+                        <!-- valen para poco por que son poco semnaticas -->
+                        <li>Etiqueta br</li>
+                         <P>la etiqueta br crea un salto de lineaEl elemento HTML line break <strong>&ltbr&gt</strong>  produce un salto de línea en el texto (retorno de carro). Es útil para escribir un poema o una dirección, donde la división de las líneas es significante.  No utilices <strong>&ltbr&gt</strong>  para incrementar el espacio entre líneas de texto; para ello utiliza la propiedad margin de CSS o el elemento <p>.
+                         </P>
+                    </ul>
+                
                 </section>
                  <div class="clearfix"></div>
 
@@ -196,7 +219,90 @@
    
  <section id="text-level">
          <header><h2> Text level semantic. </h2></header>
-        
+         <section>
+             <h3>Hiperenlaces</h3>
+             <P>La etiqueta "a" es un hiperenlace interactivo</P>
+             <Li> <a href="https://www.coches.net/">Coches</a> </Li>
+             <li> <a href="https://motos.coches.net/">Motos</a> </li>
+             <P>En el href se coloca la url que puede ser de 4 tipos diferentes</P>
+             <li> Absolutas </li>
+              <p>http://www. lo que quieras. com nos dirige de forma absoluta</p>
+             <li> Relativas al origem </li>
+             <li> Relativas al documento </li>
+             <li> Internas </li>
+         </section>
+         <section>
+              <h3> Elementos en linea neutros</h3>
+                <p> La etirqueta Span no tiene  ningun valor semantico. </p>
+                <P>por ejemplo quiero que la palabra <span class="verde"> verde </span> salga de su color.</P>
+         </section>
+           <section>
+               <h3>Elemntos claramente semanticos</h3>
+               <ul>
+                   <li>Strong</li>
+                   <P>Palabras importantes dentro de mi texto y la sugiero como clave, MUY IMPORTANTE PARA EL SEO Y NO SIGNIFICA NEGRITA, eso ya luego con css se modifica como queramos viene por defecto pero no es lo suyo. Puedo poner un css diplay none para meter strongs en contendores (span) al decir display none se oculta a usuario pero figura para el indexador y sale como strong si voy a teer una web muy grafica lo meto ahí </P>
+                   <li>Em (Emphasis)</li>
+                   <P> Énfasis lingüistico para autolectores y esas cosas tipica pausa y subidita de tono algo clave para la lectura del parrafo o cita y sale en cursiva </P>
+                   <li>Sup</li>
+                   <li>Sub</li>
+                   <P>Superindicesy subindices; tiene que ser de uso generalizado y reconocido.</P>
+                      <P> H<sub>2</sub>O y  e= m * v<sup>2</sup></P>
+                   <li>Small</li>
+                   <P>La letra pequeña Se pone en el footer o en figcaption para letra pequeña de temas legales copy rights autor todo eso la tipica letra pequeña </P>
+                   
+               </ul><small>Esto es un small</small>
+           </section>
+           <section>
+               <H3>Elemntos con valor semnaticos nuevos </H3>
+               <ul>
+                   <li>b (bold)</li>
+                   <p>fragmentos de texto que quiero o necesito que llaman la atencion sin concederles ninguna importancia extra (no es un strong) si queremos importacia strong</p>
+                   <li>i (italics)</li>
+                   <P>Indica <i>calidad diferente</i>  de texto incluyendo cambio de tono o estado de animo tipo enfasis pero no es lo mismo, tipo un refran el nombre de un barco lo que quiero en cursiva pero sin dar enfasis al leerlo </P>
+                   <li>u (underline)</li>
+                   <P> <u>UNDERLINE</u> sirve para subrayar frase nombres propios chinos, palabras mal escritas a drede. </P>
+                   <li>s (strike)</li>
+                   <P>Sireve para <s>TACHAR</s>  algo precios antiguos o info que quiero dejar pero ya no tiene valor actual para lo que quieras</P>
+               </ul>
+           </section>
+           <Section>
+               <H3>elemntos de tipo tecnico</H3>
+               <Ul>
+                   <li>Smap (Sample)</li>
+                   <li> code </li>
+                   <li> kbd (keyboard)</li>
+                   <li> var(variable) </li>
+                   <li> dfn (difinitio) </li>
+                   <li> abbr (abrebiatura o acronimos (siglas))</li>
+                   <P>mejora seo accesibilidad y usabilidad por explicar que es abbr html. por ejemplo <Abbr title="Por Ejemplo">PJ;</Abbr> </P>
+               </Ul>
+               <section>
+                   <H3>Uso de referencias y citas</H3>
+                   <ul>
+                       <Li>q (quote)</Li>
+                       <P>es la referencia en si</P>
+                       <Li>cite (la referencia)</Li>
+                       <P>donde digo de donde viene la referencia, o cuando hago referencia a algo sin necesidad de citar una parte; obras libros peliculas... </P>ç
+                       <P> La pelicula: <cite>El señor de los anillos</cite>  </P>
+                   </ul>
+                   <section>
+                       <h3>Otras eqtiquetas semanticas de html5</h3>
+                       <LI>Time </LI>
+                       <P>Por ejemplo: día de la constitucion de este año <time datetime="2019-12-06"> </time>  </P>
+                       <LI>Mark </LI>
+                       <P>marcado <mark>interactivo</mark> sirve para recalcar aquellas cosas que tiene interes para la busqueda <!-- cuando buscon en google la info que aparece abajo la obtiene o de mi description en los meta o de las primeras lineas de la web y luego los marca como em mark para que salga cuando la busquedad...   --> </P>
+                   </section>
+                   <Section>
+                       <H3>Edits</H3>
+                       <ul>
+                           <Li>ins</Li> 
+                            <li>del</li>
+                           <P>muestra el contenido que se ha insertado (Instead) en lugar de otro que se ha rechazado (delete) no lo borramos lo tachamos para que aparezca </P>
+                           <P><ins>+100</ins> <del>50</del> total 50 </P> 
+                       </ul>
+                   </Section>
+               </section>
+           </Section>
     </section>
   </div>
     
