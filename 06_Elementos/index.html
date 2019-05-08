@@ -12,20 +12,37 @@
 </head>
 
 <body>
-    <header class="mainheader"> 
+    <header class="mainheader" id="Inicio"> 
         <h1>Elementos/etiquetas de html</h1>
-        <P> Clasificación de las etiquetas según el estandar HTML 5.2 </P>
+        <P> Clasificación de las etiquetas según el estándar HTML 5.2 </P>
+        <nav><ul><!-- esto es para hacer un menu -->
+        <li><a href="#Inicio" target="_blank" rel="tag">- Inicio -</a></li>
+        <li><a href="#sections">- Sections -</a></li>
+        <li><a href="#grouping">- Grouping -</a></li>
+        <li><a href="#text-level">- Text-level -</a></li>
+        <li><a href="./Pag 2 Embotellado.html">Multimedia</a></li> <!--  si aqui pongo una url absoluta la lio porque en cuanto salga de localhost se me irá 
+        es fallo tipico pra poner la url relativas una relativa al origen al poner  / 06_elemtos... barra solo sin punto (no son malas como las absolutas pero si cambio el origen me las puedo cargar), LA FORMA BUENA ES UNA URL RELATIVA AL DOCUMENTO hago esto  tant barra como punto barra es la forma de identificar el tipo de url(ojo punto barra./ y selection multimedia o ctrl espacio y selecciono multimedia o la opcion poner .. punto punto y me habre el directorio para ponder meter el index de otra carpera es decir un enlace del hola mundo a tunez lo suyo es copiar y pegar y no estar mareando al servidor-->
+    </ul>
+    </nav> <!--  el atributo target="_blank"
+        otro atributo para los metadate de href es el rel: sirve para decirle a los navegadores que relación tiene el documento actual con el documento al cual estas enlazando otro ejemplo en el footer
+        los link a otros sitios se deben marcar con el atributo rel. external para que el sepa que va fuera si añado ref referrer deja la traza de donde vienes si pones non referrer no deja nada renta ponerlo para el seo porque si te llegan muchos mejor 
+        otro rel es nofollow cuando no quiero contribuir a la puntuación de otro pagina con mis enlaces
+        type media es el tipo MIME para que google no indexe tipo zip doc
+        Media para que sistema operativo esta pensado 
+    mine tipo mimes y leer bien en w3c nació para los ficheros electrónicos y permite añadir un atachement    -->
+        
     </header>
-  <div class="margen">
+  <div class="content_wrapper">
+      <Main>
         <P>
-        El estándar <abbr title="Hiper text markup language">HTML</abbr>  5.2 diferencia inicialmente tres tipos de etiquetas: <span lang="en"> Section, Grouping content y Text level semantic.</span> <!-- para mejorar seo si son palabras o frases mejora pero si no tampoco mucho pero suma para los lectores automaticos -->
+        El estándar <abbr title="Hiper text markup language">HTML</abbr>  5.2 diferencia inicialmente tres tipos de etiquetas: <span lang="en"> Section, Grouping content y Text level semantic.</span> <!-- para mejorar seo si son palabras o frases mejora pero si no tampoco mucho pero suma para los lectores automáticos -->
         </P>
 
     <section id="sections">
         <header><h2> <span lang="en">Section elements.</span>  </h2></header>
      </section>
-        <p>Esto trata de elementos de seccionado que son los que se reflejan en el <mark><strong>esquema</strong></mark>   outline de la pagina, inicialmente estos elmentos incluian Body y los encabezados(h1...h6).</p>
-        <p>En html 5 se añaden los nuevos elementos semanticos que son: section, footer, header, article ,nav, aside (descritos en el readme.)</p>
+        <p>Esto trata de elementos de seccionado que son los que se reflejan en el <mark><strong>esquema</strong></mark>   outline de la pagina, inicialmente estos elementos incluían Body y los encabezados(h1...h6).</p>
+        <p>En html 5 se añaden los nuevos elementos semánticos que son: section, footer, header, article ,nav, aside (descritos en el readme.)</p>
             <section id="Elementos">
                  <section id="section"> 
                      <h3>Section</h3> 
@@ -36,7 +53,7 @@
                 
             </section>
             <section id="header"> <h3>Header</h3> 
-                <blockquote cite="https://www.w3.org/TR/html52/sections.html#sections" title="developer.mozilla.org"> <!-- al añadir el atributo cite a blockquote ya ponemos la url del sitio del que lo hemos cogido el siguiente atributo title hace que al pasar el cursor sobre el parafo o lo que sea a lo que le haya pueso un title salga un cuadradito con la informacion que yo desee; a una foto que es a una cita de donde  -->El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de navegación . Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas. 
+                <blockquote cite="https://www.w3.org/TR/html52/sections.html#sections" title="developer.mozilla.org"> <!-- al añadir el atributo cite a blockquote ya ponemos la url del sitio del que lo hemos cogido el siguiente atributo title hace que al pasar el cursor sobre el parrafo o lo que sea a lo que le haya puesto un title salga un cuadradito con la información que yo desee; a una foto que es a una cita de donde  -->El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de navegación . Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas. 
                     <footer>
                         <cite>
                                 https://www.w3.org/TR/html52/sections.html#sections
@@ -99,7 +116,7 @@
             <img src="assets/html5demo1.jpg" alt="fotele">
 
            
- <section id="grouping"> 
+    <section id="grouping"> 
         <header> <h2> Grouping content. </h2></header> <!-- estos no apareceran en el esquema outline -->
             <section><p> Son etiqueta que por defecto tendrán un display en bloque (agrupan), pero no contribuyen al <strong>esquema</strong>  de la página  <span lang="en"> (outline)</span>. Por ejemplo Párrafo  </p></section>
             <section><h3> Párrafos </h3>
@@ -120,7 +137,7 @@
             </blockquote>
             <p> La etiqueta blockquote se utiliza pra crear citas literales en bloque tal como hemos hecho anteriormente</p>
             <section>
-                <h2> Listas </h2>
+                <h3> Listas </h3>
                 <P> existen tres tipos de listas; desordenas (ul), ordenadas (ol) y de definición(dl) </P>
                 <h4>tipo de lista desordenada</h4><ul>
                 <li>section</li>
@@ -214,10 +231,10 @@
             </section>
 
 
-    </section>
+         </section>
 
    
- <section id="text-level">
+    <section id="text-level">
          <header><h2> Text level semantic. </h2></header>
          <section>
              <h3>Hiperenlaces</h3>
@@ -266,7 +283,7 @@
                </ul>
            </section>
            <Section>
-               <H3>elemntos de tipo tecnico</H3>
+               <H3>Elemntos de tipo tecnico</H3>
                <Ul>
                    <li>Smap (Sample)</li>
                    <li> code </li>
@@ -301,18 +318,24 @@
                            <P><ins>+100</ins> <del>50</del> total 50 </P> 
                        </ul>
                    </Section>
+                   
                </section>
            </Section>
-    </section>
-  </div>
+        </section>
+    </Main><!--  el main hace referencia a lo que exclusivo de una pagina es decir si tengo varias pag la informcaion que solo salga en una de ellas y no sea comun al resto sera el main de esa pag -->
+        <aside>
+            <h2>publi</h2>
+        <P>Aquí pongo la publi</P>
+        </aside>
+             </div>
     
 
     
     
-    <footer class="mainfooter"> 
+     <footer class="mainfooter"> 
         <address> <p>Escrito por:  Nacho Caballero © <!-- copyrght se escribe alt+0+1+6+9 ó &copy) todos a la vez o lo saco de word o lo copio y pego de donde sea --> </p> </address>
        
-        <a href="mailto://naxo10011991@gmail.com">Contacto</a> <!-- mailto/ etiqueta para enlazar al correo se parte de la etiqueta a -->
+        <a href="mailto://naxo10011991@gmail.com" rel="Author">Contacto</a> <!-- mailto/ etiqueta para enlazar al correo se parte de la etiqueta a -->
     </footer>
         
 </body>

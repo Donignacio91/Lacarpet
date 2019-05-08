@@ -9,27 +9,40 @@
         height: 7vh;  
         text-align: center;
         padding: 0.02rem;
-        background: rgb(14, 13, 12) ;
+        background: rgb(19, 36, 21) ;
         text-align: center;
          }
 
         .mainheader {
             text-align: center;
             font-size: 1.33rem;
-            margin-top: -1rem;
+            margin-top: -2rem;
             color:rgb(3, 109, 12);
             font-weight: bold; /* Negrita se puede con strong pero así esta bien escrito */
-            background: rgb(7, 6, 6);
-        }
+            background: rgb(41, 59, 41);
+             }
+
             .mainheader p{ 
                 margin: 0rem 9
             rem 0rem 0rem;
 
         }
-    body {
+        .mainheader nav ul {
+                list-style-type:none;
+
+        }
+        .mainheader nav li {
+            display: inline-block;
+
+
+        }
+        .mainheader nav a {
+            padding: 1cm;
+        }
+         body {
         margin: 0;
         }
-        .margen{
+        .content_wrappel{
             margin: 1rem 5rem 3rem 1rem; /* margen en el sentido de las agujas del reloj 1º rem arriba 2º rem dercha 3º rem abajo 4 rem izquierda */
         }  
         .imagen { text-align: center;
