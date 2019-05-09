@@ -45,15 +45,58 @@
                 <li>webm</li>
                 </ul>
                 <section class="section_imagenes">  <h4>-Imagenes-</h4>
-                    <img src="assets/komodo.jpg" alt="Dragón de comodo dando un paseo"><img class="quito" src="assets/varanococodrilo1.png" alt="VArano coodrilo"><img src="assets/ardilla.gif" alt="Ardilla">
+                    <div>
+                            <img src="assets/komodo.jpg" alt="Dragón de comodo dando un paseo">  <img src="assets/varanococodrilo1.png" alt="VArano coodrilo"><img src="assets/ardilla.gif" alt="Ardilla">
+                            <img src="assets/3boats.jpg" alt="BArcas" srcset="assets/3boats.webp">
+                    </div>
+                    <!-- ojo con los formatos de imagenes cuanto menos pese y menos tarde en cargar mejor tanto web como mobilOJO tambien mejora el SEO priermo intento que cargue el webp (pesa menos) y tras esto el jppg a malas pesa mas y relentiza mas pero mejor eso que eque no se vea elpermite definir una fuente con alternativas primero mira el source set si lo carga tira si no puede trata de cargar el source -->
+                       <div class="clearfix"></div>
+                       <p>Uso de imagenes responsive en html, comodo adatado</p> <!-- es decir hacer una caja de fotos de diferentes tamaños para así cargar la imagen en función de view-point pantalla tamaño -->
+                </section>
+                    <div>
+                        
+
+                        <img 
+                        srcset="./assets/komodo.300.jpg 300w, 
+                        ./assets/komodo.400.jpg 400w,
+                        ./assets/komodo.500.jpg 500w,
+                        ./assets/komodo.jpg 600w"
+                                 size="(max-width: 300px), 
+                        (max-width: 400px),
+                        (max-width: 500px)"
+                        src="assets/komodo.jpg"
+                        alt="Lagartos">
+                        <div class="clearfix"></div>
+                         <P>Comodo sin adaptarse a pantalla</P>
+                            <img src="assets/komodo.500.jpg, assets/komodo.jpg, assets/komodo.400.jpg, assets/komodo.300.jpg" srcset=" assets/komodo.500.jpg, assets/komodo.jpg, assets/komodo.400.jpg, assets/komodo.300.jpg " size="(max-width:800px: 500px) 500w, 400w, 300w" alt="Dragón de comodo dando un paseo">  
+                    </div>
                     <div class="clearfix"></div>
                     <!-- eb ek src con ./ accedo al diectorio y selecciono las imagenes que las tendre en assets y en alt describo brevemente la imagen {mejora seo y accesibilidad de la web piensa en ciegos y por usabilidad cuando la imagen no carga saldrá esa descripción sino solo sale un icono} -->
                     <!-- Si veo que queda un espacio tonto entre dos imagenes en linea las tengo que colocar seguiditas no puedo dejar espacio entre ellas.  -->
 
-                    
+                        <p>Lusso Adaptado con img src</p>
+                     <img src="assets/don_250lusso800.jpg" 
+                     srcset="./assets/don_250lusso250.jpg 250w,
+                     ./assets/don_250lusso450.jpg 450w,
+                     ./assets/don_250lusso650.jpg 650w,
+                     ./assets/don_250lusso800.jpg 850w,
+                     "  size="(max-width: 250px)
+                     (max-width: 450px)
+                     (max-width: 650px)"
                      
-                         
-                    </section>
+                     alt="Bello">
+
+                     <div class="clearfix"></div>   
+                     <h3>Etiquetas picture</h3>  
+                        <picture>
+                        <source media="(min-width: 800px)" srcset="./assets/don_250lusso800.jpg" type="image/jpg">
+                        <source media="(min-width: 650px)" srcset="./assets/don_250lusso650.jpg" type="image/jpg">
+                        <source media="(min-width: 450px)" srcset="./assets/don_250lusso450.jpg" type="image/jpg">
+                        <source media="(min-width: 10px)" srcset=" ./assets/don_250lusso250.jpg" type="image/jpg">
+                            <img src="assets/don_250lusso800.jpg" alt="Bello" style="width:auto;">       
+                        </picture>
+
+                    
                 <section> <h4> -Video y audio- </h4>
 
                      

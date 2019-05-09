@@ -35,7 +35,8 @@
         }
         .mainheader nav li {
             display: inline-block;
-        }        .mainheader nav a {
+        }
+        .mainheader nav a {
             padding: 1cm;
         }
          body {
@@ -49,12 +50,16 @@
         }  
         .imagen { text-align: center;
             max-width: 100%; /* para que la imagen ocupe como mucho el 100% y si quiero fijar el tamaño pongo width: y el ancho en pixles  */
-        }
+        } 
         .img{
-            margin:0rem;
-            max-width: 50%;/*  siempre para no pasarme de tamaño */
-            
+           max-width: 200%;
+         
+            height: auto;
+        
         }
+            /*  siempre para no pasarme de tamaño */
+           
+    
         .img_wrappel_50{
             width: 50%;
         }
@@ -117,6 +122,11 @@
             font-family: inherit; /* inherit porque el navegador le aplica por defecto un estilo predeterminado; le hago un css e inherit o el que me de la gana ponerle pero ojo con los predeterminados se ven en el navegador f12 sobre la zona deseada y ya ne dice de donde esta sacando el estilo */
            
         } 
+        .verdet {
+            font-family: cursive;ç
+            font-weight:bold;
+            color: grey;
+        }
         blockquote{
             margin-block-start: 0px;
             margin-block-end: 0px;
