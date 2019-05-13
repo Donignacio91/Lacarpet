@@ -4,6 +4,7 @@
     text-align: center;
     }
 
+    
 
     .mainfooter {background-color: grey;
         color: rgb(0, 148, 12);
@@ -12,8 +13,15 @@
         padding: 0.02rem;
         background: rgb(19, 36, 21) ;
         text-align: center;
+        height: auto;
          }
 
+         header {font-family: 'Ultra', serif;
+         } 
+         .palabrarota {
+             overflow: break-word;
+
+         }
         .mainheader {
             text-align: center;
             font-size: 1.33rem;
@@ -22,27 +30,52 @@
             font-weight: bold; /* Negrita se puede con strong pero así esta bien escrito */
             background: rgb(41, 59, 41);
             margin-left: -2cm;
+            font-family: 'Ultra', serif;
              }
-
+             .iframefooter{
+                 border: none;
+                 width: 100%;
+             }
             .mainheader p{ 
                 margin: 0rem 9
             rem 0rem 0rem;
+            font-family: 'Ultra', serif;
 
+        }
+        video, embed{
+                max-width: 100%;
         }
         .mainheader nav ul {
-                list-style-type:none;
+                list-style-type:none;}
 
-        }
+
         .mainheader nav li {
+
             display: inline-block;
         }
         .mainheader nav a {
             padding: 1cm;
+
         }
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%; /* El valor sale de que los videos normales de youtube tienen un ratio (relación de tamaño) de 16:9 corresponde ese valor. Si el video tiene otra relación tienes que hacer una regla de 3, para más info: https://cybmeta.com/como-hacer-un-iframe-responsive */
+            height: 0;
+            overflow: hidden;
+        }
+        .embed-container iframe {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        } /* Copiado y pegado de internet */
+
          body {
         margin: 0;
         margin-left: 0.5cm;
-        background-color:rgb(170, 170, 170)
+        background-color:rgb(170, 170, 170);
+        font-family: 'Original Surfer',
         
         } 
         .content_wrappel{
@@ -92,18 +125,22 @@
         h1 {
             font-size: 3rem;
             font-weight: bold;
+
+            font-family: 'Ultra';
         }
         h2 {
             font-size: 2.6rem;
             font-weight: bold;
             color:green;
             margin-left: 3.5cm;
+            font-family: 'Ultra';
         }
         h3 {
             font-size: 1.5rem;
             font-weight: bold;
             color: green;
             margin-left: 2cm; 
+            font-family: 'Ultra';
         }
         H3 {
             font-size: 1.5rem;
@@ -117,6 +154,7 @@
             color: rgb(19, 63, 19);
             margin-left: 1cm; 
             text-align: center;
+            font-family: 'Ultra';
         }
         Pre{
             font-family: inherit; /* inherit porque el navegador le aplica por defecto un estilo predeterminado; le hago un css e inherit o el que me de la gana ponerle pero ojo con los predeterminados se ven en el navegador f12 sobre la zona deseada y ya ne dice de donde esta sacando el estilo */

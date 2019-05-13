@@ -7,13 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Etiquetas de la web</title>
     <link rel="stylesheet" href="stylos/stylo.css">
+    <link href="https://fonts.googleapis.com/css?family=Original+Surfer|Sawarabi+Mincho|Ultra" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"><!-- meter iconos online free -->
 
 
 </head>
 
 <body>
     <header class="mainheader" id="Inicio"> 
-        <h1>Elementos/etiquetas de html</h1>
+        <h1> <i class="fab fa-html5"></i>
+             Elementos/etiquetas de html 
+             <i class="fab fa-html5"></i>
+            </h1>
         <P> Clasificación de las etiquetas según el estándar HTML 5.2 </P>
         <nav class="verdet"><ul><!-- esto es para hacer un menu -->
         <li><a href="#Inicio" target="_blank" rel="tag">- Inicio -</a></li>
@@ -21,8 +26,10 @@
         <li><a href="#grouping">- Grouping -</a></li>
         <li><a href="#text-level">- Text-level -</a></li>
         <li><a href="./Pag 2 Embotellado.html">Multimedia</a></li> <!--  si aqui pongo una url absoluta la lio porque en cuanto salga de localhost se me irá 
-        es fallo tipico pra poner la url relativas una relativa al origen al poner  / 06_elemtos... barra solo sin punto (no son malas como las absolutas pero si cambio el origen me las puedo cargar), LA FORMA BUENA ES UNA URL RELATIVA AL DOCUMENTO hago esto  tant barra como punto barra es la forma de identificar el tipo de url(ojo punto barra./ y selection multimedia o ctrl espacio y selecciono multimedia o la opcion poner .. punto punto y me habre el directorio para ponder meter el index de otra carpera es decir un enlace del hola mundo a tunez lo suyo es copiar y pegar y no estar mareando al servidor-->
+        es fallo tipico pra poner la url relativas una relativa al origen al poner  / 06_elemtos... barra solo sin punto (no son malas como las absolutas pero si cambio el origen me las puedo cargar), LA FORMA BUENA ES UNA URL RELATIVA AL DOCUMENTO hago esto  tant barra como punto barra es la forma de identificar el tipo de url(ojo punto barra./ y selection multimedia o ctrl espacio y selecciono multimedia o la opción poner .. punto punto y me habre el directorio para ponder meter el index de otra carpera es decir un enlace del hola mundo a tunez lo suyo es copiar y pegar y no estar mareando al servidor-->
         <li><a href="./mmedia.html">Multimedia II</a></li>
+        <li><a href="/06_Elementos/Datos.html#tablas">tablas</a></li> 
+                    <li><a href="/06_Elementos/Datos.html#Formularios"> Formularios</a></li>
     </ul>
     </nav> <!--  el atributo target="_blank"
         otro atributo para los metadate de href es el rel: sirve para decirle a los navegadores que relación tiene el documento actual con el documento al cual estas enlazando otro ejemplo en el footer
@@ -205,12 +212,12 @@
                     </ul>
                     <P>Según aparece en la web, <q cite="HTML.COM">el elemento html address, <a href="https://elpais.com/">aporta información de contacto,</a>  normalmente puede ser colocado dentro del elemnto footer de la section.</q> <!-- ES COMO UN BLOKQUOTE PERO PARA DENRTRO DE PARRAFOS CONSEGUIMOS LO MISMO QUE EN LOS BLOCKCUOTES; ENTRE COMILLA MARCA UNA CITA LITERAL  --> </P>
                     <p>El elemento html adress aporta informacionde contacto, tambien aporta inforacion para su &ltarticle&gt mas cercano</p>
-                    <Blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main" title="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main">
+                    <Blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main" title="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main" >
                         <P>El elemento HTML &ltmain&gt representa el contenido principal del &ltbody&gt de un documento o aplicación. El área principal del contenido consiste en el contenido que está directamente relacionado, o se expande sobre el tema central de un documento o la funcionalidad central de una aplicación. Este contenido debe ser único al documento, excluyendo cualquier contenido que se repita a través de un conjunto de documentos como barras laterales, enlaces de navegación, información de derechos de autor, logos del sitio y formularios de búsqueda (a menos, claro, que la función principal del documento sea un formulario de búsqueda).</P>      
                     </Blockquote><!-- lo suyo seria un footer con una cite y un A sería mucho mas correcto lo otro es mas informal el cite con  blocquote  -->
                     
                     <footer>
-                            <cite> <a href="">https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main</a> </cite>
+                            <cite> <a href="">https://developer.mozilla.org/ es/docs/Web/HTML/Elemento/main</a> </cite>
                         </footer>
                 </blockquote>
                     <p>El elemento figure es un contenedor de imagenes del que hablaremos al referirnos a estas</p>
@@ -226,7 +233,16 @@
                 </section>
                  <div class="clearfix"></div>
 
+                    <section>
+                        <Footer class="mainsectionfooter">
+                            <a href="#inicio" rel="tag" title="inicio">
+                                <i class="far fa-arrow-alt-circle-up"></i>
+                            </a>
+                               
 
+                               
+                        </Footer>
+                    </section>
                  </section>
                 <h3>Ejemplos de listas largar</h3>
             </section>
@@ -331,14 +347,7 @@
              </div>
     
 
-    
-    
-     <footer class="mainfooter"> 
-        <address> <p>Escrito por:  Nacho Caballero © <!-- copyrght se escribe alt+0+1+6+9 ó &copy) todos a la vez o lo saco de word o lo copio y pego de donde sea --> </p> </address>
-       
-        <a href="mailto://naxo10011991@gmail.com" rel="Author">Contacto</a> <!-- mailto/ etiqueta para enlazar al correo se parte de la etiqueta a -->
-    </footer>
-        
+    <iframe class="iframefooter" src="./footer.html" frameborder="0"></iframe>
 </body>
 
 </html>
