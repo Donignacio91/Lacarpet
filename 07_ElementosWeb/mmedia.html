@@ -127,12 +127,14 @@
                         <h3>Video y Audio</h3>
                         <p>Es posible incluir un vídeo desde una fuente externa (desde una url)</p>
                     <div class="embed-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8ZPLEx52FLU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- Allow fullscream para que el vídeo se vea en pantalla completa, se puede quitar --> 
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8ZPLEx52FLU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                     <p> Allow fullscream para que el vídeo se vea en pantalla completa, se puede quitar></p>  <!-- Allow fullscream para que el vídeo se vea en pantalla completa, se puede quitar --> 
                     </div>
                     <p>Otra opción es reproducir el vídeo de nuestro servidor. En ese caso deberemos de descargarnos un vídeo y utilizar la etiqueta &lt;video&gt; </p>
                     <video src="./assets/Ghost_in_the_Shell_Opening.mp4" class="video" controls poster="./assets/111.jpg" >
                         
-                      <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webp"> <!-- Para poner otro tipo de video (por si no es compatible con los navegadores hacemos un source como en picture para poder poner srcset) --> <!-- No se pone control en source, ya la tiene la etiqueta vídeo -->
+                      <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webp">
+                        <p> Para poner otro tipo de video (por si no es compatible con los navegadores hacemos un source como en picture para poder poner srcset)   No se pone control en source, ya la tiene la etiqueta vídeo </p>  
                     </video> <!-- Debemos de añadir el atributo "controls" para que el vídeo empiece y tenga los controles de pausar, iniciar...  -->
                     <!-- ATENCIÓN: No se por qué soy a la unica que poniendo srcset en source le sale el vídeo, se supone que debes poner src (me funciona igual de bien) -->
                     <figure class="figcapt">
