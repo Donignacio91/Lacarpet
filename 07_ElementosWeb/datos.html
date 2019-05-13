@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Para meter fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <!-- Para meter iconos online -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Inicio - Elementos de la web</title>
+</head>
+
+<body id="inicio">
+    <header class="mainheader">
+            <h1>ETIQUETAS DE HTML<i class="fab fa-html5"></i></h1>
+            <p>Clasificación de las etiquetas según el estándar HTML5.2</p>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" rel="tag"></a>Inicio</li>
+                    <li><a href="#sections_Elements" rel="tag">Sections</a></li>
+                    <li><a href="#grouping" rel="tag">Grouping</a></li>
+                    <li><a href="#text-level" rel="tag">Text-level</a></li>
+                    <li><a href="/07_ElementosWeb/mmedia.html">Multimedia</a></li> <!-- Relativo al origen: me voy a la carpeta origen del sitio web y a partir de ahí empieza a "contar". 
+                    Relativo al documento: otro es que vayas a la carpeta desde el localhost y vea el navegador qué carpeta está activa. Puede ser que la carpeta de origen no sea la carpeta donde aparece el index -->
+                    <!-- <a href="/07_ElementosWeb/mmedia.html">Multimedia</a> "Busca desde la carpeta de origen"
+                    <a href="./mmedia.html"></a> Relativa a la carpeta que está el index "Busca desde dónde yo estoy" Sólo me sale directamente si estoy dentro de la carpeta en donde aparece el index que quiero -->
+                    <!-- PARA MÁS INFO. DIBUJO DE NACHO DE CAJITAS  -->
+                    <li><a href="#tablas"> Tablas</a></li>
+                    <li><a href="#formularios"> Formularios</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div class="content_wrapper">
+        <main>
+            <section id="tablas">
+                <header>
+                    <h2>Tablas</h2>
+                    <p>En cada celda hay un dato que corresponde a la intersección del valor de la columna con la celda. No se utilizan para maquetar</p>
+                </header>
+                <p>Ejemplo de tabla del uso de los navegadores</p>
+                <table>
+                    <tr> <!-- Fila -->
+                        <table border="1" >
+                            <tr> 
+                                <th></th>
+                                <th>2017</th>
+                                <th>2018</th>
+                                <th>2019</th>
+                            </tr>
+                            <tr>
+                                <td>Google Chrome</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Safari</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Mozilla Firefox</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>UC Browser</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Internet Explorer</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Opera</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Otros</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>                        
+                </table>
+                 
+8 filas x 4 columnas
+
+2017
+
+
+2018                                                     2019
+     Google Chrome (61,55 %) 
+     Safari (15,13 %) 
+     UC Browser (4,41 %) 
+     Mozilla Firefox (5,02 %)
+     Internet Explorer (2,88 %) 
+     Opera (3,16 %) 
+     Otros (7,85 %) 
+     Chrome 67 - 32,59% 
+
+                                                    Safari 11 - 10,79% 
+                                                    UC Browser 12 - 6,16% 
+                                                    Firefox 61 - 2,65% 
+                                                    IE 11 - 2,44% 
+                                                    Chrome 66 - 2,44% 
+                                                    Chrome 59 - 2,30% 
+                                                    Chrome 49 - 2,18% 
+                                                    Chrome 64 - 1,91% 
+                                                    Safari 10 - 1,74% 
+
+            </section>
+            <section id="formularios">
+                <header>
+                     <h2>Formulario</h2>
+                </header>
+            </section>
+        </main>
+                <aside>
+                        <h2>Publicidad</h2>
+                        <img src="./assets/hamburguesas.jpg" alt="Publicidad">
+                </aside>
+            </div>
+            <iframe class="iframe_footer" src="./footer.html" ></iframe>
+    </body>    
+</html>
