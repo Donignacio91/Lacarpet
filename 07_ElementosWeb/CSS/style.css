@@ -148,6 +148,11 @@ video, embed {
     color:rgb(1, 173, 38);
 
 }
+.ctre{
+    text-align: center;
+    align-content: center;
+    align-self: auto;
+}
 
 p {
     text-align: justify; /* No se debe justificar por el tema de anchos en móviles y ordenadores */
@@ -235,6 +240,28 @@ s {
 .sinborde {
     border: 0rem;
 }
+.maintable{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+.maintable>tbody>tr:nth-of-type(even){ /* impares */
+    width: 100%;
+    background-color: lightgreen;
+    text-align: center;
+    
+    
+}
+.maintable>tbody>tr:nth-of-type(odd){/* pares */
+    width: 100%;
+    background-color: lightgrey;
+    text-align: center;
+}
+.amarillo {
+    background-color: lightgreen;
+}
+
 /* .ger {
     display: none;
 } */
