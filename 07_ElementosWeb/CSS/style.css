@@ -6,7 +6,7 @@ body {
 }
 
 .mainheader {
-    background-color:rgb(1, 173, 38);
+    background-color:rgb(2, 121, 27);
     color:rgb(214, 213, 213);
     text-align: center;
     padding: 0.8rem 0rem 0.5rem 1rem;
@@ -16,14 +16,14 @@ body {
 
 .mainfooter {
     background-color:rgb(214, 213, 213);
-    color:rgb(1, 173, 38);
+    color: rgb(2, 121, 27);
     text-align: center;
     padding: 1rem; /* Da "Aire" a la página */
 }
 
 .mainfooter aside{
     background-color:rgb(214, 213, 213);
-    color: rgb(1, 173, 38);
+    color: rgb(2, 121, 27);
     text-align: center;
     padding: 1rem; /* Da "Aire" a la página */
 }
@@ -232,6 +232,9 @@ s {
     font-weight: bold;
 }
 
+.sinborde {
+    border: 0rem;
+}
 /* .ger {
     display: none;
 } */
