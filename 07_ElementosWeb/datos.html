@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Para meter fuentes -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     <!-- Para meter iconos online -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
@@ -266,19 +266,131 @@
                      <li> Action</li>
                      <li> Method</li>
                 </ul>
+            
+            <section class="cntr">
+                <h3><p>
+                    Formulario mínimo
+                </p></h3>
+                <p>
+                    Ejemplo de los elementos minimos de un formulario y uso de los distintos metodos: GET y POST
+                </p>
+                <h4>Uso de GET</h4>
+                <p>
+                    El método get es el utilizado para los fomularios con información sensible
+                </p>
+                <form action="" name="Basic GET"  method="GET"> <!-- siempre post que get se ve todo y menos seguro La info importante en post-->
+                    <input type="text" name="userName" placeholder="Nombre usuario">
+                    <input type="password" name="userPasswprd" placeholder="Contraseña">
+                    <button type="submit"> Enviar </button>
 
-               <form action="https://jsonplaceholder.typicode.com/users"  method="post"> <!-- siempre post que get se ve todo y menos seguro La info importante en post-->
+                <h4>Uso de POST</h4>
+                <P>El método get es el utilizado para los fomularios con información no sensible </P>
+               <form action="https://jsonplaceholder.typicode.com/users" name="Basic POSH" method="POST"> <!-- siempre post que get se ve todo y menos seguro La info importante en post-->
                    <input type="text" name="userName" placeholder="Nombre usuario">
                    <input type="password" name="userPasswprd" placeholder="Contraseña">
                    <button type="submit"> Enviar </button>
                </form>
+               <h4>Formulario completo </h4>
+               <p>
+                   Usamos en un mismo foermulario los principales controles
+               </p>
+               <form action="https://jsonplaceholder.typicode.com/users" name="completopost"  method="POST"> <!-- siempre post que get se ve todo y menos seguro La info importante en post-->
+                <fieldset>
+                    <legend>
+                        Datos personales 
+                    </legend>
+                     <label class="form_label" for="userName">Nombre usuario</label>
+                         <input class="form_control" type="text" name="userName" id="userName" placeholder="Nombre y apellidos" required>
+
+                     <label class="form_label" for="Password">Password</label>
+                        <input class="form_control" type="password" name="userPassword" id="Password"  placeholder="Contraseña" required minlength="5" required maxlength="16">
+                   
+                    <label class="form_label" for="mail">Correo electronico</label>
+                      <input class="form_control" type="email" class="form_control" name="mail" id="mail" placeholder="...@gmail.com" value="@gmail.com" required>
+                      
+                     <label class="form_label" for="">Formación</label>
+                        <input class="form_control" type="text" name="CV" id="CV" placeholder="Selecciona o indica tus estudios">
+                            <datalist id="Formación">
+                            <option>Graduado</option>
+                            <option>Licenciado</option>
+                            <option>Doctorado</option>
+                            </datalist>
+
+                            <label class="form_label" for="birthday" name="birthday">Fecha de nacimiento</label>
+                                <input class="form_control" type="date" name="Birthday" id="Birthday">
+                      <textarea name="Info" id="Info" class="form_control" rows="6" placeholder="Observaciones"></textarea>
+                    </fieldset>
+                        <fieldset class="newfield"><legend>Terminos y condiciones</legend>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea obcaecati doloremque cumque et totam dolorum alias quidem consequuntur enim porro sit mollitia velit voluptatibus ad dolor ex quia, quo aliquid.</p>
+                            <input type="checkbox" name="isOK" id="isOK">
+                            <label for="isOK">He leido y acepto</label>
+                        </fieldset>
+                        <fieldset class="newfield">
+                            <legend>Datos del curso</legend>
+                            <label class="form_label" for="curso">Curso</label>
+                            <select name="curso" id="curso" multiple>
+                                <option class="placeholder" value="" >Seleciona </option>
+                                <optgroup label="grupo 1">
+                                <option value="html5">HTML5</option>
+                                <option value="css3">CSS3</option></optgroup>
+                                <optgroup label="grupo 2">
+                                <option value="JS">JavaScrip</option>
+                                <option value="phsh">Photoshop</option></optgroup>
+                    </select></fieldset>
+                    <fieldset class="newfield">
+                        <p>Places</p>
+                        <div class="form_control2">
+                        <input  type="radio" name="sitio" id="Madrid" value="Madrid" >
+                        <label for="Madrid">Madrid</label>
+                        <input type="radio" name="sitio" id="" value="Sevilla">
+                        <label for="Sevilla">Sevilla</label>
+                        <input type="radio" name="sitio" id="Barcelona" value="Barcelona">
+                        <label for="Barcelona">Barcelona</label></div>
+
+                    </section></fieldset>
+
+                </section> 
+                <button type="button">no vale pa na</button>
+              <input name="borrar" Borra type="reset" value="Delete">         
+             <button type="submit"> Enviar <i class="fab fa-html5"> </i> </button>
+           
             </section>
+            <div class="clearfix"></div>
+            <p>Existen otros controles de fomularios</p>
             
+            <div class="clearfix"></div>
+            
+            <li><ul><dl>
+
+                <dt class="dt">Imput color</dt>
+                
+                <dd class="dd"> color <input type="color" > </dd>
+                
+                <dd class="dd"> Doc <input type="file" > </dd>
+                
+                <dd class="dd"> Nº <input type="number" > </dd>
+                
+                <dd class="dd"> Range <input type="range" maxlength="100" ></dd>
+                
+                <dd class="dd"> Buscar <input type="search"></dd>
+                
+                <dd class="dd"> Telefono <input type="tel"> </dd>
+                
+                <dd class="dd"> Url <input type="url"> </dd></dl></ul></li>
+                
+            
+            <div class="clearfix"></div>
         </main>
                 <aside>
                         <h2>Publicidad</h2>
                         <img src="./assets/vanlife.jpg" alt="Publicidad">
                 </aside>
+                <aside class="ctre">
+                    <a class="weatherwidget-io" href="https://forecast7.com/es/40d71n74d01/new-york/" data-label_1="Madrid" data-label_2="WEATHER" data-theme="original" >Madrid WEATHER</a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
+            </aside>
             </div>
             <iframe class="iframe_footer" src="./footer.html" ></iframe>
     </body>    
