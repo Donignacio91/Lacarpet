@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Multimedia - Elementos de la web</title>
 </head>
 
@@ -23,6 +27,9 @@
                     <!-- <a href="/07_ElementosWeb/mmedia.html">Multimedia</a> "Busca desde la carpeta de origen"
                     <a href="./mmedia.html"></a> Relativa a la carpeta que está el index "Busca desde dónde yo estoy" Sólo me sale directamente si estoy dentro de la carpeta en donde aparece el index que quiero -->
                     <!-- PARA MÁS INFO. DIBUJO DE NACHO DE CAJITAS  -->
+                    
+                    <li><a href="./datos.html#tablas"> Tablas</a></li>
+                    <li><a href="./datos.html#formularios"> Formularios</a></li>
                 </ul>
             </nav>
     </header>
@@ -81,7 +88,7 @@
                                                 ./assets/komodo.400.jpg 400w,
                                                 ./assets/komodo.500.jpg 500w,
                                                 ./assets/komodo.jpg 600w"
-                                    size="(max-width: 300px),
+                                    sizes="(max-width: 300px),
                                         (max-width: 400px), 
                                         (max-width: 500px)"
                                     src="./assets/komodo.jpg"
@@ -93,7 +100,7 @@
                                         srcset="./assets/pastor.300.jpg 300w,
                                         ./assets/pastor.500.jpg 500w,
                                         ./assets/pastor.700.jpg 700w"
-                                        size= "(max-width: 300px)
+                                        sizes= "(max-width: 300px) 300px,
                                         (max-width: 500px)"
                                     alt="">
                                 </div>
@@ -107,8 +114,8 @@
                             
                         </picture>   
                         <p>La etiqueta picture y los formatos alternativos de imágenes</p>
-                        <picture>
-                            <source srcset="./assets/tropical-sunrise.webp" type="image/webp">
+                        <picture class="imagen_normal">
+                            <source srcset="./assets/tropical-sunrise.webp" type="image/webp" >
                                 <img src="./assets/tropical-sunrise.jpg" alt="Paisaje tropical"> <!-- Sólo se debe meter una foto (la misma) en cada picture -->
                         </picture>
                         <picture>
@@ -124,39 +131,50 @@
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/8ZPLEx52FLU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- Allow fullscream para que el vídeo se vea en pantalla completa, se puede quitar --> 
                     </div>
                     <p>Otra opción es reproducir el vídeo de nuestro servidor. En ese caso deberemos de descargarnos un vídeo y utilizar la etiqueta &lt;video&gt; </p>
-                    <video src="./assets/Ghost_in_the_Shell_Opening.mp4" class="video" controls >
-                      <source srcset="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webp"> <!-- Para poner otro tipo de video (por si no es compatible con los navegadores hacemos un source como en picture para poder poner srcset) --> <!-- No se pone control en source, ya la tiene la etiqueta vídeo -->
+                    <video src="./assets/Ghost_in_the_Shell_Opening.mp4" class="video" controls poster="./assets/111.jpg" >
+                        
+                      <source src="./assets/Ghost_in_the_Shell_Opening.webm" type="video/webp"> <!-- Para poner otro tipo de video (por si no es compatible con los navegadores hacemos un source como en picture para poder poner srcset) --> <!-- No se pone control en source, ya la tiene la etiqueta vídeo -->
                     </video> <!-- Debemos de añadir el atributo "controls" para que el vídeo empiece y tenga los controles de pausar, iniciar...  -->
                     <!-- ATENCIÓN: No se por qué soy a la unica que poniendo srcset en source le sale el vídeo, se supone que debes poner src (me funciona igual de bien) -->
                     <figure class="figcapt">
                         <img src="./assets/Captura2.PNG" alt="">
                         <figcaption>Etiquetas de vídeo</figcaption>
                     </figure>
-                    <audio src="assets/" controls></audio><!-- El atributo controls es para que salga el play y pause la barrita de reproducción todo eso 
-                    la cancion se pone en las comillas sin espacios y .mp3   -->
+                    <audio src="./assets/Paul Kalkbrenner - Sky and Sand [www.slider.kz].mp3" controls></audio> <!-- CONSEJO: es preferible quitar los espacios -->
                     </section>
                     <section>
                         <h3>Elementos de navegación gráficos</h3>
+                        <p>En HTML antiguo se usaba la etiqueta map para definir un hotspot (Es un mapa de bits sobre el cual asocias unas áreas para que el usuario haga x (Imagen interactiva). Se dejó de utilizar por no ser responsive.Una interfaz gráfico.</p>
+                        <p>En HTML5 se puede conseguir éste efecto usando svg </p>
+                        <embed src="./assets/logo.svg" type="image/svg+xml">
                     </section>
                 </section>
                 <aside>
                     <h3>Elementos embebidos no multimedia</h3>
                     <p>La etiqueta <strong>&lt;iframe&gt;</strong> permite acceder a otra web desde la nuestra</p>
                     <iframe src="https://www.tajamar.es/" class="web_externa"></iframe> <!-- los frameborder="0" es css y no se debe de usar en html, es una etiqueta deprecado (obsoleto) -->
+                    <p>Otras formas de insertar contenido externo: </p>
+                        <ul>
+                            <li>&lt;Object&gt; </li> 
+                            <li>&lt;Embed&gt; </li>
+                        </ul> <!-- iframe: una ventana que te lleva a otro sitio web -->
+                    <object data="https://www.tajamar.es/" type="text/html"></object>
+                    <embed src="https://www.tajamar.es/" type="text/html"> 
+                        <p>También relacionado con la navegación gráfica estaría el uso de iconos en los menús</p>
+                        <iframe width="600" height="450" class="sin_borde" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCFzeAJCkJSc4sTLiwG-u3hEvlOmVgsGqo&q=Space+Needle,Seattle+WA" allowfullscreen>
+                        </iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3038.554429650507!2d-3.6531417346046835!3d40.39656687936749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stajamar!5e0!3m2!1sen!2ses!4v1557844220379!5m2!1sen!2ses" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </aside>
         </main>
     <aside>
                 <h2>Publicidad</h2>
                 <img src="./assets/hamburguesas.jpg" alt="Publicidad">
+                <i class="fas fa-alicorn"></i>
     </aside>
     </div>
-    <footer class="mainfooter">
-            <address>Sara Bachiller Parra - Tajamar <!-- (para poner el código de copyright debes de poner alt+169 de sacle © ® &+ copy también sale). Dentro de address se puede meter un párrafo -->
-                <div><a rel="Author" href="mailto://sarabachiller@gmail.com">Correo electrónico</a></div>
-                <!-- Mailto para pegar una url de un correo -->
-            </address>
-        </footer>
-    
+    <iframe class="iframe_footer" src="./footer.html" ></iframe>
     </body>
+    <!-- ICONOS: https://fontawesome.com/icons/alicorn?style=light
+         FUENTES: https://fonts.google.com/?category=Display&selection.family=Lemon|Zilla+Slab -->
     
     </html>

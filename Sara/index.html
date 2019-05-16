@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- Sirve para que te salga el favicon que tienes en tu carpeta, no otro que se invente github -->
+    <!-- Para meter fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <!-- Para meter iconos online -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Inicio - Elementos de la web</title>
 </head>
 
 <body id="inicio">
     <header class="mainheader">
-            <h1>ETIQUETAS DE HTML5</h1>
+            <h1>ETIQUETAS DE HTML<i class="fab fa-html5"></i></h1>
             <p>Clasificación de las etiquetas según el estándar HTML5.2</p>
             <nav>
                 <ul>
@@ -19,11 +25,13 @@
                     <li><a href="#sections_Elements" rel="tag">Sections</a></li>
                     <li><a href="#grouping" rel="tag">Grouping</a></li>
                     <li><a href="#text-level" rel="tag">Text-level</a></li>
-                    <li><a href="/Sara/mmedia.html">Multimedia</a></li> <!-- Relativo al origen: me voy a la carpeta origen del sitio web y a partir de ahí empieza a "contar". 
+                    <li><a href="./mmedia.html#mmedia">Multimedia</a></li> <!-- Relativo al origen: me voy a la carpeta origen del sitio web y a partir de ahí empieza a "contar". 
                     Relativo al documento: otro es que vayas a la carpeta desde el localhost y vea el navegador qué carpeta está activa. Puede ser que la carpeta de origen no sea la carpeta donde aparece el index -->
                     <!-- <a href="/07_ElementosWeb/mmedia.html">Multimedia</a> "Busca desde la carpeta de origen"
                     <a href="./mmedia.html"></a> Relativa a la carpeta que está el index "Busca desde dónde yo estoy" Sólo me sale directamente si estoy dentro de la carpeta en donde aparece el index que quiero -->
                     <!-- PARA MÁS INFO. DIBUJO DE NACHO DE CAJITAS  -->
+                    <li><a href="./datos.html#tablas"> Tablas</a></li>
+                    <li><a href="./datos.html#formularios"> Formularios</a></li>
                 </ul>
             </nav>
     </header>
@@ -58,7 +66,7 @@
                 </section>
                 <section id="nav">
                     <h3>Etiqueta Nav</h3>
-                        <blockquote>La MDN indica que esta etiqueta crea un menú de navegación (https://developer.mozilla.org). El elemento HTML &lt;nav&gt; representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de contenido e índices.  </blockquote>
+                        <blockquote>La MDN indica que esta etiqueta crea un menú de navegación (https://developer .mozilla.org). El elemento HTML &lt;nav&gt; representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de contenido e índices.  </blockquote>
                 </section>
                 <section id="article">
                     <h3>Etiqueta Article</h3>    
@@ -79,8 +87,10 @@
                    <img src="./assets/web.jpg" alt="La web"> 
                     <figcaption class="figcapt">Esta foto representa la web</figcaption> -->
                 <!-- </figure> -->
-                <footer>
-                   <a href="#inicio">Inicio</a> 
+                <footer class="main_section_footer">
+                   <a href="#inicio" rel="tag" title="Inicio">
+                        <i class="fas fa-home"></i>
+                   </a> 
                 </footer>
             </section>
         </section>
@@ -104,12 +114,12 @@
                         <blockquote cite="https://en.wikipedia.org/wiki/Blockquote_element" title="wikipedia.org/">
                         El (&lt;blockquote cite="" title= ""&gt;) atributo cite sirve para meter una URL de donde se ha cogido la información que hemos citado/referenciado. Dentro del blockquote se puede poner title para que un usuario vea de dónde se ha cogido esa información cuando esté encima del texto (hará referencia a una URL). 
                             <footer>
-                                <cite>https://en.wikipedia.org/wiki/Blockquote_element</cite> <!-- Pie de página de la autoría -->
+                                <cite>https://en.wikipedia.org/wiki /Blockquote_element</cite> <!-- Pie de página de la autoría -->
                             </footer>
                         </blockquote>
                         <figure class="figcapt"><img src="./assets/etiquetas.PNG" alt="Etiquetas">
                             <figcaption class="figcapt">
-                                <cite> <a target="_blank" href="http://www.mclibre.org/consultar/htmlcss/como/como-texto-imagenes.html" rel="external" > http://www.mclibre.org/consultar/htmlcss/como/como-texto-imagenes.html</a>
+                                <cite> <a target="_blank" href="http://www.mclibre.org/consultar/htmlcss/como/como-texto-imagenes.html" rel="external" > http://www.mclibre.org/ consultar/htmlcss/como/como-texto-imagenes.html</a>
                                 </cite>
                                 <!-- En un mismo hiperenlace puedes poner tantos atributos cuantos necesites. Target= "_blank" te lo abre en otra pestaña -->
                             </figcaption>
@@ -216,9 +226,11 @@
             </section>
         </section>
         </section>
-        <footer>
-                <a href="#inicio" rel="tag">Inicio</a> 
-             </footer>
+        <footer class="main_section_footer">
+                <a href="#inicio" rel="tag" title="Inicio">
+                     <i class="fas fa-home"></i>
+                </a> 
+        </footer>
         
         <section id="text-level">
             <header>
@@ -240,6 +252,10 @@
                     <li>Relativas al documento (Empiezan por ./)</li>
                     <li>Internas</li>
                 </ul>
+                <figure class="figcapt">
+                        <img src="./assets/hiperenlace.png" alt="Hiperenlaces">
+                    </figure>
+
                 <p>En un mismo hiperenlace puedes poner tantos atributos cuantos necesites. Target= "_blank" te abre una nueva pestaña para abrir la ventana</p>
                <p> Otro atributo es rel, un metadato que sirve para "decirle" a los navegadores que relación tiene el documento actual con el documento al que vas a hacer el enlace, también para indicar si son links internos o externos. Tag sería para internos y externos external.</p>
                <p>El orden de los atributos no tienen importancia.</p>
@@ -347,21 +363,18 @@
         </section>
         </section>
     </section>
-        <footer>
-                <a href="#inicio">Inicio</a> 
-        </footer>
+    <footer class="main_section_footer">
+            <a href="#inicio" rel="tag" title="Inicio">
+                 <i class="fas fa-home"></i>
+            </a> 
+         </footer>
         </main>
     <aside>
         <h2>Publicidad</h2>
         <img src="./assets/hamburguesas.jpg" alt="Publicidad">
     </aside>
     </div>
-    <footer class="mainfooter">
-        <address>Sara Bachiller Parra - Tajamar <!-- (para poner el código de copyright debes de poner alt+169 de sacle © ® &+ copy también sale). Dentro de address se puede meter un párrafo -->
-            <div><a rel="Author" href="mailto://sarabachiller@gmail.com">Correo electrónico</a></div>
-            <!-- Mailto para pegar una url de un correo -->
-        </address>
-    </footer>
+    <iframe class="iframe_footer" src="./footer.html" ></iframe>
 
 </body>
 
