@@ -2,7 +2,7 @@ body {
     margin: 0;
     /* background: radial-gradient silver skyblue springgreen wheat; */
     max-width: 100%;
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Marcellus', serif;
 }
 
 .mainheader {
@@ -148,10 +148,10 @@ video, embed {
     color:rgb(1, 173, 38);
 
 }
-.ctre{
+/* .ctre{
     text-align: center;
     align-content: center;
-    align-self: auto;
+    align-self: auto; */
 }
 
 p {
@@ -246,10 +246,8 @@ s {
 .sinborde {
     border: 0rem;
 }
-./* cntr {
-    text-align: center;
-    align-content: center;
-    align-items: center; */
+.cntr {
+     margin: 1rem 1rem 1rem 12rem;
 }
 .maintable{
     text-align: center;
@@ -262,7 +260,6 @@ s {
     background-color: lightgreen;
     text-align: center;
     
-    
 }
 .maintable>tbody>tr:nth-of-type(odd){/* pares */
     width: 100%;
@@ -273,8 +270,16 @@ s {
     background-color: lightgreen;
 }
 fieldset {
-    border: none;
+    margin-bottom: 1rem;
+    border-color:lightgreen;
 }
+:-ms-input-placeholder {
+    color: lightgreen; /* Sólo es válido cambiar el color para algunos navegadores */
+}
+
+::-ms-input-placeholder {
+    color: lightgreen;}
+    
 .newfield {
     border-bottom:1px solid black;
     background-color:  rgba(144, 218, 137, 0.527);
@@ -297,12 +302,13 @@ margin-top:1rem; }
 .form_control {
     display: block;
     width: 100%;
+    border:none;
     border:rgb(1, 173, 38);;
-    border-bottom:1px solid black;
+    border-bottom:1px solid rgb(212, 212, 212);
     padding-bottom: 0.5rem; 
     margin-bottom: 0.7rem;
    padding-top: 1rem;
-   background-color:rgba(144, 218, 137, 0.527);    
+   background-color:rgb(160, 238, 187);    
 }
 .form_control2 {
     display: block;
@@ -324,8 +330,8 @@ width: 100%
 
 
 
-::placeholder{
-    color:green; 
+.placeholder{
+    color:rgb(160, 238, 187); 
 }
 
 button { 
@@ -383,13 +389,18 @@ button {
 	position:absolute;
 	top:1px;
 }
-.placeholder { color: green;
 
-}
  optgroup {
      color: #106103;
  }
+.botonderecho {
+    padding right: 90%;
+    display: block
 
+}
+.botonizquierdo{
+    display: block;
+    padding-left: 85%;
 }
 /* .ger {
     display: none;
